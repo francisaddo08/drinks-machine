@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-4 mt-5">
+    <p > DRINKS MACHINE </p>
+    </div>
+
+  </div>
+  <div class="row mt-5">
+    <div class="col-6 offset-4">
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Select Your Drink
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item"  [routerLink]="['/lemon-tea']">Lemon Tea</a>
+          <a class="dropdown-item"  [routerLink]="['/coffee']" >Coffee</a>
+          <a class="dropdown-item" [routerLink]="['/chocolate']">Chocolate</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-6 offset-2">
+        <div class="card">
+
+          <div class="card-body">
+            <router-outlet></router-outlet>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
